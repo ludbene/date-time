@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+
+    <arg name="basepath" value="."/>
+    <arg name="colors"/>
+    <arg name="extensions" value="php"/>
+    <arg value="sp"/>
+
+    <file>src</file>
+    <file>tests</file>
+
+    <rule ref="vendor/doctrine/coding-standard/lib/Doctrine/ruleset.xml">
+        <!-- Overriding needed -->
+        <exclude name="Generic.CodeAnalysis.UselessOverridingMethod"/>
+        <!-- Disallow -->
+        <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+    </rule>
+
+    <rule ref="Generic.Formatting.SpaceAfterNot">
+        <properties>
+            <property name="spacing" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
+        <properties>
+            <property name="spacesCountAfterKeyword" value="0"/>
+        </properties>
+    </rule>
+</ruleset>

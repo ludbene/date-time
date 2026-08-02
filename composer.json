@@ -1,0 +1,37 @@
+{
+    "name": "bene/date-time",
+    "description": "Date and time utilities",
+    "keywords": ["date", "time", "seconds"],
+    "homepage": "https://github.com/ludbene/date-time",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luděk Benedík"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "doctrine/coding-standard": "^14.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Bene\\DateTime\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bene\\DateTime\\Tests\\": "tests/"
+        }
+    }
+}

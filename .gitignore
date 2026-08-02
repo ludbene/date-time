@@ -1,0 +1,16 @@
+# System, IDE
+/.idea/
+.DS_Store
+Thumbs.db
+
+# App
+/vendor/
+/composer.lock
+
+# phpunit/phpunit
+/.phpunit.cache
+/phpunit.xml
+
+# squizlabs/php_codesniffer
+/.phpcs-cache
+/phpcs.xml
